@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blog</title>
+    <style>
+         body {
+            margin: 0 auto;
+            padding: 18px;
+            background-color: papayawhip;
+        }
+        .header {
+            background: lightcoral;
+            padding-left: 100px;
+        }
+        .post {
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px;
+            width: 600px;
+            background:lightsalmon;
+        }
+        .newpost {
+            margin: 10px;
+            width: 600px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>My Blog Képalkotó vizsgálatok</h1>
+    </div>
+    <div class="newpost">
+        <h2>Add new post</h2>
+        <div class="postform">
+            <form>
+                <div>
+                    <div>
+                        <label for="title">Title</label>
+                    </div>
+                    <input type="text" id="title">
+                </div>
+                <div>
+                    <div>
+                        <label for="content">Content</label>
+                    </div>
+                    <textarea id="content" name="content" rows="5" cols="33"></textarea>
+                </div>
+                <div>
+                    <input id="kuld" type="submit">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="posts">
+    
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAS0JcrQxzNGeRofFRZnrQECRQErG3OPec",
+    authDomain: "kata-83d29.firebaseapp.com",
+    databaseURL: "https://kata-83d29.firebaseio.com",
+    projectId: "kata-83d29",
+    storageBucket: "kata-83d29.appspot.com",
+    messagingSenderId: "56662678972",
+    appId: "1:56662678972:web:69756e73eeaeaaff895fb9",
+    measurementId: "G-REWTSCXSC7"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  let database = firebase.database();
+</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
